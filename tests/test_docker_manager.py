@@ -1,10 +1,5 @@
-import unittest
-
-
-class MyTestCase(unittest.TestCase):
-	def test_something(self):
-		self.assertEqual(True, False)
-
-
-if __name__ == '__main__':
-	unittest.main()
+class TestDockerManager:
+	def test_can_instantiate_docker_manager_class(self):
+		""" Test DockerManager class """
+		from app.docker_manager import DockerManager
+		docker_manager = DockerManager()
