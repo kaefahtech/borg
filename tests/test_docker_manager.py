@@ -3,3 +3,4 @@ class TestDockerManager:
 		""" Test DockerManager class """
 		from app.docker_manager import DockerManager
 		docker_manager = DockerManager()
+		assert isinstance(docker_manager, DockerManager)
